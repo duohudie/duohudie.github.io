@@ -1756,75 +1756,57 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Hexo-NexT搭建个人博客（一）]]></title>
+      <title><![CDATA[前端JavaScript基础]]></title>
       <url>https://duohudie.github.io/2016/09/03/hexo-next-one/</url>
-      <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 是一个快速、简洁且高效的静态站点生成框架，它基于 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> 。 它有以下特点：</p>
-<ul>
-<li><i class="fa fa-bolt"></i><h6 style="display: inline;">　超快速度</h6><br><i>Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。</i></li>
-<li><i class="fa fa-pencil"></i><h6 style="display: inline;">　支持Markdown</h6><br><i>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</i></li>
-<li><i class="fa fa-cloud-upload"></i><h6 style="display: inline;">　一键部署</h6><br><i>只需一条指令即可部署到Github Pages，或其他网站</i></li>
-<li><i class="fa fa-cog"></i><h6 style="display: inline;">　丰富的插件</h6><br><i>Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</i></li>
-</ul>
-<p>通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 <a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener">标签插件</a> 来快速的插入特定形式的内容。</p>
-<p>基于 Hexo 这个优秀的博客框架，很多优秀的开发者奉献出了它们基于 Hexo 开发的<a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题</a>。<br><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT</a> 因其 <span id="yu-1">精于心，简于形</span> 的风格，一直被广大用户所喜爱。</p>
+      <content type="html"><![CDATA[<h1 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h1><p> 一、 基础知识 （原型、原型链，作用域、闭包，异步、单线程）</p>
+<p>二、js-web-api（DOM操作，Ajax , 时间绑定）</p>
+<p>三、开发环境（版本管理 ，模块化 ，打包工具）</p>
+<p>四 、运行环境（页面渲染 、性能优化）</p>
+<p> 基础不代表并不重要，扎实的基础会让你更加高效学习新技术 ，it工程师应有的自我修养：基础、自我查询知识、<br> 拥有获取新知识的欲望</p>
 <a id="more"></a>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>安装 Hexo 只需几分钟时间，若你在安装过程中遇到问题或无法找到解决方式，请<a href="https://duohudie.github.io/guestbook/">提交问题</a>，我会尽力解决你的问题。</p>
-<h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><p>安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序:</p>
-<blockquote>
-<p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a><br><a href="http://git-scm.com/" target="_blank" rel="noopener">Git</a></p>
-</blockquote>
-<p>如果您的电脑中已经安装上述必备程序，那么恭喜你！接下来只需要使用 npm 即可完成 Hexo 的安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<p>如果你的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p>
-<h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><ul>
-<li>Windows：下载安装 git 。<a id="download" href="https://git-scm.com/download/win" target="_blank" rel="noopener"><i class="fa fa-download"></i><span> Download Now</span><br></a></li>
-<li>Mac：使用 <a href="http://mxcl.github.com/homebrew/" target="_blank" rel="noopener">Homebrew</a>，<a href="http://www.macports.org/" target="_blank" rel="noopener">MacPorts</a> 或下载 <a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="noopener">安装程序</a> 安装</li>
-<li>Linux（Ubuntu，Debian）：<code>sudo apt-get install git-core</code></li>
-<li>Linux（Fedora，Red Hat，CentOS）：<code>sudo yum install git-core</code></li>
-</ul>
-<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>安装 Node.js 的最佳方式是使用 <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a>。（nvm：Node Version Manager）<br>windows 下使用 nvm 请看这里： <a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="noopener">nvm-windows</a> ，首先需要下载安装 nvm 。<a id="download" href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noopener"><i class="fa fa-download"></i><span> Download Now</span><br></a><br>windows下安装完nvm以后，我们可以打开命令行中执行命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ nvm</span><br><span class="line">$ nvm install latest</span><br></pre></td></tr></table></figure></p>
-<p>执行完以后，重启命令行，执行命令 <code>node -v</code> ，如果出现版本号，那么 <code>Node.js</code> 就安装成功了。</p>
-<p id="div-border-left-red">如果没有安装成功，那可能就是墙的原因。建议下载 <code>Node.js</code> 直接安装。<a id="download" href="https://nodejs.org/en/download/" target="_blank" rel="noopener"><i class="fa fa-download"></i><span> Download Now</span><br></a> </p>
-
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>有了 Node.js ，我们可以使用 npm 安装 Hexo。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<p>安装 Hexo 完成后，我们首先需要为我们的项目创建一个<span id="inline-green">指定文件夹</span>（例如我在 D 盘目录下创建了一个文件夹 blog 。<code>D:\blog</code> ），在指定文件夹中执行下列命令， Hexo 将会在指定文件夹中新建所需要的文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
-<p>等待安装，安装完成后，<span id="inline-green">指定文件夹</span> 的目录如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└──</span><br></pre></td></tr></table></figure></p>
-<p>我们继续执行命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s --debug</span><br></pre></td></tr></table></figure></p>
-<p>Hexo 将 source 文件夹中除 _posts 文件夹之外，开头命名为 _(下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件夹会被拷贝过去。<br>这个时候，我们在浏览器中访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ，就可以看到基于 Hexo 的默认主题的原型：<br><img src="http://p1.bqimg.com/567571/27324b740c9e91e2.png" alt="hexo-next-one-1"></p>
-<h2 id="安装-NexT-主题"><a href="#安装-NexT-主题" class="headerlink" title="安装 NexT 主题"></a>安装 NexT 主题</h2><h3 id="下载-NexT-主题"><a href="#下载-NexT-主题" class="headerlink" title="下载 NexT 主题"></a>下载 NexT 主题</h3><p>依旧是在当前目录下，使用 Git checkout 代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
-<p>等待下载完成。</p>
-<p id="div-border-left-yellow">在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>  我们约定，将前者称为 <span id="inline-blue">站点配置文件</span>，后者称为 <span id="inline-purple">主题配置文件</span></p>
-
-<h3 id="启用-NexT-主题"><a href="#启用-NexT-主题" class="headerlink" title="启用 NexT 主题"></a>启用 NexT 主题</h3><p>打开 <span id="inline-blue">站点配置文件</span> ，找到 theme 字段，并将其值更改为 next 。<br>到此， NexT 主题安装完成。下一步我们将验证主题是否正确启用。在切换主题之后、验证之前，我们最好使用 <code>hexo clean</code> 来清除 Hexo 的缓存。</p>
-<h3 id="验证主题"><a href="#验证主题" class="headerlink" title="验证主题"></a>验证主题</h3><p>首先启动 Hexo 本地站点，并开启调试模式（即加上 <code>--debug</code>），整个命令是 <code>hexo s --debug</code>。在服务启动的过程，注意观察命令行输出是否有任何异常信息。当命令行输出中提示：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-<p>此时即可使用浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> ，检查站点是否正确运行。</p>
-<p id="div-border-left-green">当你看到站点的外观与下图所示类似时即说明你已成功安装 NexT 主题。这是 NexT 默认的 Scheme —— Muse</p><br><img src="http://p1.bqimg.com/567571/8333728b5eaab526.png" alt="hexo-next-one-1"><br>现在，我们已经成功安装并启用了 NexT 主题。<br><br><p id="div-border-top-blue">关于更多基本操作和基础知识，请查阅 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 与 <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">NexT</a> 官方文档.</p>
-
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="本地调试步骤"><a href="#本地调试步骤" class="headerlink" title="本地调试步骤"></a>本地调试步骤</h2><p>三部曲：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s --debug</span><br></pre></td></tr></table></figure></p>
-<p>这种带 debug 的运行，如果出现错误，可以在命令行中看到错误提示信息。</p>
-<h2 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h2><p>三部曲：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
-<p>当然在部署之前，需要先配置好配置文件中的 deploy。</p>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"postName"</span>  <span class="comment">#新建文章</span></span><br><span class="line">$ hexo new page <span class="string">"pageName"</span> <span class="comment"># 新建页面</span></span><br><span class="line">$ hexo generate <span class="comment"># 生成静态页面至public目录</span></span><br><span class="line">$ hexo server <span class="comment"># 开启预览访问端口(默认端口4000，'ctrl+c'关闭server)</span></span><br><span class="line">$ hexo deploy <span class="comment"># 项目部署</span></span><br><span class="line">$ hexo <span class="built_in">help</span> <span class="comment"># 查看帮助</span></span><br><span class="line">$ hexo version <span class="comment"># 查看Hexo的版本</span></span><br></pre></td></tr></table></figure>
-<h2 id="简写命令"><a href="#简写命令" class="headerlink" title="简写命令"></a>简写命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new == hexo n</span><br><span class="line">$ hexo generate == hexo g</span><br><span class="line">$ hexo server == hexo s</span><br><span class="line">$ hexo deploy == hexo d</span><br></pre></td></tr></table></figure>
-<h2 id="常见问题1"><a href="#常见问题1" class="headerlink" title="常见问题1"></a>常见问题1</h2><p>在 hexo 的配置和设置文件中，在冒号后面没留空格会导致出问题：<br>错误的设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">author:duohudie</span><br><span class="line">email:react.dong.yu@gmail.com</span><br><span class="line">language:zh-CN</span><br></pre></td></tr></table></figure></p>
-<p>正确的设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">author: duohudie</span><br><span class="line">email: react.dong.yu@gmail.com</span><br><span class="line">language: zh-CN</span><br></pre></td></tr></table></figure></p>
-<h2 id="常见问题2"><a href="#常见问题2" class="headerlink" title="常见问题2"></a>常见问题2</h2><p>关于 Git 提交中用户名和 Email 的设置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your name&quot;</span><br><span class="line">git config --global user.email &quot;Your email&quot;</span><br></pre></td></tr></table></figure></p>
-<h2 id="常见问题3"><a href="#常见问题3" class="headerlink" title="常见问题3"></a>常见问题3</h2><p>Hexo 中的图标使用的是 <a href="http://fontawesome.io/" target="_blank" rel="noopener">Font Awesome</a> ，所以，我们的博客已经自带了 Font Awesome 中的所有图标，基本可以满足我们的所有需求，我们可以去 Font Awesome 中查找我们想要使用的图标。<br><i class="fa fa-github"></i> <code>&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-github fa-lg"></i> <code>&lt;i class=&quot;fa fa-github fa-lg&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-github fa-2x"></i> <code>&lt;i class=&quot;fa fa-github fa-2x&quot;&gt;&lt;/i&gt;</code></p>
-<p></p><h5 style="color:#f63;"><i>最后要说的是：</i></h5><p></p>
-<p id="div-border-top-green"><i><a href="https://github.com/duohudie/duohudie.github.io" target="_blank" rel="noopener">博客源码</a> ， 欢迎 star<br></i></p>]]></content>
+<h1 id="前端常见面试题（带着问题往下看，后面有答案）"><a href="#前端常见面试题（带着问题往下看，后面有答案）" class="headerlink" title="前端常见面试题（带着问题往下看，后面有答案）"></a>前端常见面试题（带着问题往下看，后面有答案）</h1> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">面试时拿到面试题第一时间看到的应该是考点，想面试官考的是什么，网上面试题看不完，掌握基础知识才能以不变应万变</span><br></pre></td></tr></table></figure>
+<p> 1、JS中使用typeof能得到哪些类型？（*考js变量类型）</p>
+<p> 2、何时使用==何时使用===？（*考制类型转换）</p>
+<p> 3、window.onload和DOMContentLoaded的区别？（考浏览器渲染过程）</p>
+<p> 4、用JS创建10个 &lt; a &gt; 标签，点击的时候弹出对应的序号？（考作用域）</p>
+<p> 5、简述如何实现一个模块加载器，实现类似require.jsde基本功能？（考js模块化）</p>
+<p> 6、实现数组的随机排序？（js基础算法）</p>
+<p> 7、js有哪些内置函数？</p>
+<p> 8、js变量按照存储方式分为哪些类型，并描述其特点</p>
+<p> 9、如何理解JSON</p>
+<h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><h3 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h3>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">js变量按照存储方式分为 值类型 和引用类型</span><br></pre></td></tr></table></figure>
+<p> 下面a的值为值类型，结果输出b=100，b不会因a的值得改变而改变，值类型为直接赋值；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">100</span></span><br><span class="line">bar b = a</span><br><span class="line">a = <span class="number">200</span></span><br><span class="line"><span class="built_in">console</span>.log(b)    <span class="comment">//100</span></span><br></pre></td></tr></table></figure></p>
+<p> 下面a的值为引用类型结果输出a.age=32，a的值因b的值得的改变而改变，引用类型赋值其实只是指针指向了同一个内存地址，并没有在内存中重新创建一个值<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = &#123;<span class="attr">age</span>:<span class="number">25</span>&#125;</span><br><span class="line">bar b = a</span><br><span class="line">b.age = <span class="number">32</span></span><br><span class="line"><span class="built_in">console</span>.log(a.age)    <span class="comment">//32</span></span><br></pre></td></tr></table></figure></p>
+<p>   属于引用类型的有：数组、函数、对象。</p>
+<p>   引用类型可以无限扩展属性。如：<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = &#123;<span class="attr">age</span>:<span class="number">25</span>&#125;</span><br><span class="line">a.sex=<span class="string">'男'</span></span><br><span class="line"><span class="built_in">console</span>.log(a)    <span class="comment">//&#123;age:25,sex:'男'&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>  typeof运算符能得到六种类型：undefined,string,number,boolean,object,function,typeof不能精确或取引用类型<br>  只能精确得出值类型，null，对象，数组，得到的值都是object，function例外，函数比较特殊</p>
+   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">typeof undefined    //undefined</span><br><span class="line">typeof <span class="string">'abc'</span>        //string</span><br><span class="line">typeof 123          //number</span><br><span class="line">typeof <span class="literal">true</span>         //boolean</span><br><span class="line">typeof &#123;&#125;           //object</span><br><span class="line">typeof []           //object</span><br><span class="line">typeof null         //object</span><br><span class="line">typeof console.log  //<span class="keyword">function</span></span><br></pre></td></tr></table></figure>
+<h3 id="变量计算"><a href="#变量计算" class="headerlink" title="变量计算"></a>变量计算</h3><p>强制类型转换可能发生的情况</p>
+<p>1、字符串拼接</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">100</span> +  <span class="number">10</span>   <span class="comment">//110</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="number">100</span> + <span class="string">'10'</span>   <span class="comment">//10010</span></span><br></pre></td></tr></table></figure>
+<p>2、==运算符(慎用)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">100</span> == <span class="string">'100'</span>          <span class="comment">//true</span></span><br><span class="line"> <span class="number">0</span>   ==  <span class="string">''</span>           <span class="comment">//true</span></span><br><span class="line"><span class="literal">null</span> == <span class="literal">undefined</span>     <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+<p>3、if语句</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a= <span class="literal">true</span></span><br><span class="line"><span class="keyword">if</span>(a)&#123;</span><br><span class="line">  <span class="comment">//执行</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> b= <span class="number">100</span></span><br><span class="line"> <span class="keyword">if</span>(b)&#123;</span><br><span class="line">   <span class="comment">//执行</span></span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">var</span> c= <span class="string">''</span></span><br><span class="line">  <span class="keyword">if</span>(c)&#123;</span><br><span class="line">    <span class="comment">//不执行</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>4、逻辑运算符</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="number">10</span> &amp;&amp; <span class="number">0</span>)         <span class="comment">//0</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">''</span> || <span class="string">'abc'</span>)     <span class="comment">//abc</span></span><br><span class="line"><span class="built_in">console</span>.log(!<span class="built_in">window</span>.abc)     <span class="comment">//true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//判断一个变量会被当作true还是false</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">100</span></span><br><span class="line"><span class="built_in">console</span>.log(!!a)</span><br></pre></td></tr></table></figure>
+<p>   未完待续</p>
+]]></content>
       
         <categories>
             
-            <category> Hexo1 </category>
+            <category> 前端JavaScript基础 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> Hexo </tag>
+            <tag> JavaScript </tag>
             
-            <tag> Next </tag>
+            <tag> 前端 </tag>
+            
+            <tag> 前端JavaScript基础 </tag>
             
         </tags>
         
