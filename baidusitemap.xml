@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://duohudie.github.io/2016/09/03/hexo-next-one/</loc>
-    <lastmod>2018-03-24T19:46:11.000Z</lastmod>
+    <lastmod>2018-03-25T14:06:17.000Z</lastmod>
     <data>
         <display>
         <title>前端JavaScript基础</title>
@@ -48,12 +48,12 @@
 
     
   <url>
-    <loc>https://duohudie.github.io/2016/11/11/hexo-next-three/</loc>
+    <loc>https://duohudie.github.io/2016/09/30/hexo-next-two/</loc>
     <lastmod>2018-03-21T15:36:54.000Z</lastmod>
     <data>
         <display>
-        <title>Hexo-NexT搭建个人博客（三）</title>
-        <pubTime>2016-11-11T05:25:24.000Z</pubTime>
+        <title>Hexo-NexT搭建个人博客（二）</title>
+        <pubTime>2016-09-30T14:18:22.000Z</pubTime>
         
         <tag>Hexo</tag>
          
@@ -63,26 +63,6 @@
            
              
               <breadCrumb title="Hexo" url="https://duohudie.github.io/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://duohudie.github.io/2016/10/07/git/</loc>
-    <lastmod>2018-03-21T15:36:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>Git学习总结</title>
-        <pubTime>2016-10-07T05:25:24.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-             
-              <breadCrumb title="综合" url="https://duohudie.github.io/categories/%E7%BB%BC%E5%90%88/"/>
           
         </display>
     </data>
@@ -110,6 +90,27 @@
 
     
   <url>
+    <loc>https://duohudie.github.io/2016/10/07/git/</loc>
+    <lastmod>2018-03-21T15:36:54.000Z</lastmod>
+    <data>
+        <display>
+        <title>Git学习总结</title>
+        <pubTime>2016-10-07T05:25:24.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="综合" url="https://duohudie.github.io/categories/%E7%BB%BC%E5%90%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>https://duohudie.github.io/2017/07/15/hexo-next-five/</loc>
     <lastmod>2018-03-21T15:36:54.000Z</lastmod>
     <data>
@@ -131,14 +132,13 @@
     </url>
 
     
-    
   <url>
-    <loc>https://duohudie.github.io/2016/09/30/hexo-next-two/</loc>
+    <loc>https://duohudie.github.io/2016/11/11/hexo-next-three/</loc>
     <lastmod>2018-03-21T15:36:54.000Z</lastmod>
     <data>
         <display>
-        <title>Hexo-NexT搭建个人博客（二）</title>
-        <pubTime>2016-09-30T14:18:22.000Z</pubTime>
+        <title>Hexo-NexT搭建个人博客（三）</title>
+        <pubTime>2016-11-11T05:25:24.000Z</pubTime>
         
         <tag>Hexo</tag>
          
@@ -148,26 +148,6 @@
            
              
               <breadCrumb title="Hexo" url="https://duohudie.github.io/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://duohudie.github.io/2017/03/20/amd-cmd/</loc>
-    <lastmod>2018-03-21T15:36:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>AMD，CMD 规范详解</title>
-        <pubTime>2017-03-19T19:25:24.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://duohudie.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
           
         </display>
     </data>
@@ -195,12 +175,12 @@
 
     
   <url>
-    <loc>https://duohudie.github.io/2017/03/07/commonjs/</loc>
-    <lastmod>2018-03-21T15:36:53.000Z</lastmod>
+    <loc>https://duohudie.github.io/2017/03/20/amd-cmd/</loc>
+    <lastmod>2018-03-21T15:36:54.000Z</lastmod>
     <data>
         <display>
-        <title>CommonJS 详细介绍</title>
-        <pubTime>2017-03-07T05:25:24.000Z</pubTime>
+        <title>AMD，CMD 规范详解</title>
+        <pubTime>2017-03-19T19:25:24.000Z</pubTime>
         
         <tag>JavaScript</tag>
          
@@ -221,6 +201,26 @@
         <display>
         <title>腻子脚本 — HTML5Shiv</title>
         <pubTime>2017-01-18T05:25:24.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://duohudie.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://duohudie.github.io/2017/03/07/commonjs/</loc>
+    <lastmod>2018-03-21T15:36:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>CommonJS 详细介绍</title>
+        <pubTime>2017-03-07T05:25:24.000Z</pubTime>
         
         <tag>JavaScript</tag>
          
@@ -300,58 +300,14 @@
 
     
   <url>
-    <loc>https://duohudie.github.io/2017/05/01/gulp/</loc>
+    <loc>https://duohudie.github.io/2017/06/25/css-hack/</loc>
     <lastmod>2018-03-18T17:50:48.000Z</lastmod>
     <data>
         <display>
-        <title>gulp 详解与使用</title>
-        <pubTime>2017-04-30T17:25:24.000Z</pubTime>
+        <title>CSS 各种Hack手段</title>
+        <pubTime>2017-06-24T19:25:24.000Z</pubTime>
         
-        <tag>gulp</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://duohudie.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://duohudie.github.io/2016/11/18/china-javascript-environment/</loc>
-    <lastmod>2018-03-18T17:50:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>中国国内 JavaScript 圈的现状如何</title>
-        <pubTime>2016-11-18T05:25:24.000Z</pubTime>
-        
-        <tag>essay</tag>
-         
-        <tag>JavaScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="综合" url="https://duohudie.github.io/categories/%E7%BB%BC%E5%90%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://duohudie.github.io/2016/11/22/use-jquery-skill/</loc>
-    <lastmod>2018-03-18T17:50:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>jQuery使用技巧</title>
-        <pubTime>2016-11-22T03:54:55.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-        <tag>jQuery</tag>
+        <tag>CSS</tag>
          
          
            
@@ -386,6 +342,28 @@
 
     
   <url>
+    <loc>https://duohudie.github.io/2016/11/18/china-javascript-environment/</loc>
+    <lastmod>2018-03-18T17:50:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>中国国内 JavaScript 圈的现状如何</title>
+        <pubTime>2016-11-18T05:25:24.000Z</pubTime>
+        
+        <tag>essay</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="综合" url="https://duohudie.github.io/categories/%E7%BB%BC%E5%90%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://duohudie.github.io/2017/11/11/vue-sell/</loc>
     <lastmod>2018-03-18T17:50:48.000Z</lastmod>
     <data>
@@ -406,14 +384,14 @@
 
     
   <url>
-    <loc>https://duohudie.github.io/2016/12/24/why-introversion-like-alone/</loc>
+    <loc>https://duohudie.github.io/2017/02/14/why-we-dropped-zepto/</loc>
     <lastmod>2018-03-18T17:50:48.000Z</lastmod>
     <data>
         <display>
-        <title>【转】为什么一些生活中很外向开朗的人会喜欢独来独往</title>
-        <pubTime>2016-12-24T14:25:24.000Z</pubTime>
+        <title>【转】为什么我们放弃了 Zepto</title>
+        <pubTime>2017-02-13T17:25:24.000Z</pubTime>
         
-        <tag>essay</tag>
+        <tag>zepto</tag>
          
          
            
@@ -426,14 +404,36 @@
 
     
   <url>
-    <loc>https://duohudie.github.io/2017/02/14/why-we-dropped-zepto/</loc>
+    <loc>https://duohudie.github.io/2016/11/22/use-jquery-skill/</loc>
     <lastmod>2018-03-18T17:50:48.000Z</lastmod>
     <data>
         <display>
-        <title>【转】为什么我们放弃了 Zepto</title>
-        <pubTime>2017-02-13T17:25:24.000Z</pubTime>
+        <title>jQuery使用技巧</title>
+        <pubTime>2016-11-22T03:54:55.000Z</pubTime>
         
-        <tag>zepto</tag>
+        <tag>JavaScript</tag>
+         
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://duohudie.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://duohudie.github.io/2016/12/24/why-introversion-like-alone/</loc>
+    <lastmod>2018-03-18T17:50:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>【转】为什么一些生活中很外向开朗的人会喜欢独来独往</title>
+        <pubTime>2016-12-24T14:25:24.000Z</pubTime>
+        
+        <tag>essay</tag>
          
          
            
@@ -487,6 +487,7 @@
     </url>
 
     
+    
   <url>
     <loc>https://duohudie.github.io/2017/02/18/js-memory-management-and-gc/</loc>
     <lastmod>2018-03-18T17:50:48.000Z</lastmod>
@@ -507,16 +508,15 @@
     </url>
 
     
-    
   <url>
-    <loc>https://duohudie.github.io/2017/06/25/css-hack/</loc>
+    <loc>https://duohudie.github.io/2017/05/01/gulp/</loc>
     <lastmod>2018-03-18T17:50:48.000Z</lastmod>
     <data>
         <display>
-        <title>CSS 各种Hack手段</title>
-        <pubTime>2017-06-24T19:25:24.000Z</pubTime>
+        <title>gulp 详解与使用</title>
+        <pubTime>2017-04-30T17:25:24.000Z</pubTime>
         
-        <tag>CSS</tag>
+        <tag>gulp</tag>
          
          
            
