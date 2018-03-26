@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>朵蝴蝶的blog</title>
+  <title>朵蝴蝶的博客</title>
   <icon>https://www.gravatar.com/avatar/083b229bd12f61165825e9f42fa836cb</icon>
-  <subtitle>胆小怕生</subtitle>
+  <subtitle>胆小怕生、卖码为生</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://duohudie.github.io/"/>
